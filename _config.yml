@@ -1,0 +1,31 @@
+# top level stuff you probably don't need to touch
+highlighter: rouge
+markdown: kramdown
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+plugins: [jekyll-paginate]
+port: 3000
+safe: true
+
+
+# edit here to achieve your personal greatness
+url: http://afshinabdi.github.io/
+baseurl: /
+title: Afshin Abdi
+author: Afshin Abdi
+description: Personal blog and resume
+avatar: profile.png
+email: abdi@ece.gatech.edu
+github: afshinabdi # username
+#twitter: username
+linkedin: afshinabdi
+#stackoverflow: username   #e.g: users/2735833/proton1h1
+#Comment out if you don't want disqus
+disqus: afshinabdi-github-io
+google_analytics: UA-159991323-1
+
+
+# needed for travis-ci build
+exclude: [vendor]
