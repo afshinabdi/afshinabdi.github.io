@@ -11,8 +11,8 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://afshinabdi.github.io/
-baseurl: /
+url: https://afshinabdi.github.io/
+baseurl: https://afshinabdi.github.io/
 title: Afshin Abdi
 author: Afshin Abdi
 description: Personal blog and resume
@@ -20,7 +20,7 @@ avatar: profile.png
 email: abdi@ece.gatech.edu
 github: afshinabdi # username
 #twitter: username
-linkedin: afshinabdi
+linkedin: afshin-abdi-9ba2a944
 #stackoverflow: username   #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus
 disqus: afshinabdi-github-io
