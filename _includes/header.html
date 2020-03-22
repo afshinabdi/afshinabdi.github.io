@@ -1,16 +1,31 @@
 <nav class="navbar navbar-default">
+<style>
+.button {
+  background-color: white;
+  border: solid;
+  border-radius: 8px;
+  color: 5987E6;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+</style>
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="{{ site.baseurl }}"><i class="fa fa-home"></i></a>
     </div>
     <div id="navbar">
       <ul class="nav navbar-nav navbar-right">
-		<a href="{{ site.baseurl }}about.html" class="button button-ghost" title="about">about</a>
-		<a href="{{ site.baseurl }}projects.html" class="button button-ghost" title="projects">projects</a>
-        <li><a href="{{ site.baseurl }}about.html">ABOUT</a></li>
-        <li><a href="{{ site.baseurl }}projects.html">PROJECTS</a></li>
-        <li><a href="https://afshinabdi.github.io/vitae/cv.pdf">RESUME</a></li>
-        <li><a href="{{ site.baseurl }}blog.html">BLOG</a></li>
+        <a href="{{ site.baseurl }}about.html" class="button button" title="About">About</a>
+        <a href="{{ site.baseurl }}projects.html" class="button button" title="Projects">Projects</a>
+        <a href="{{ site.baseurl }}blog.html" class="button button" title="Blog">Blog</a>
+        <a href="{{ site.baseurl }}vitae/cv.pdf" class="button button" title="Resume">Resume</a>
       </ul>
     </div>
   </div>
