@@ -2,10 +2,10 @@
 <style>
 .button {
   background-color: white;
-  border: solid;
+  border: none;
   border-radius: 8px;
   color: 7DC3FF;
-  padding: 10px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -14,12 +14,15 @@
   margin: 2px 2px;
   cursor: pointer;
 }
-.button:hover {background: #eee;}
+.button:hover {
+  background: #eee;
+  color: #5987E6;
+}
 
 </style>
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="{{ site.baseurl }}"><i class="fa fa-home"></i></a>
+      <a class="navbar-brand" href="{{ site.baseurl }}" class="button button" title="Home"><i class="fa fa-home"></i></a>
     </div>
     <div id="navbar">
       <ul class="nav navbar-nav navbar-right">
