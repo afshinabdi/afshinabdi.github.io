@@ -4,40 +4,66 @@ title: Home
 ---
 
 <section id="home">
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3" align="center">
-			<img class="img-square avatar" width=169 height=187 alt="Afshin Abdi" align="top" src="{{ site.baseurl }}static/img/{{ site.avatar }}">
+			<br>
+			<img class="img-circle" width=160 alt="Afshin Abdi" src="{{ site.baseurl }}static/img/{{ site.avatar }}">
 			</div>
 			<div class="col-sm-9" align="justify">
 				<h3>Hello! I'm <strong>{{ site.author }}</strong>. </h3><br>
-				<h4>I am currently Ph.D.&nbsp;candidate at the School of Electrical and Computer Engineering at Georgia Institute of Technology.</h4>
-				
-				<h4>Essentially, my current research spans the areas of machine learning, distributed optimization and inference, applications of deep neural networks especially in coding and communication, and learning and inverse problems with side information, esp. in biology and micro-RNA sensing.</h4>
+				<h4>I am Ph.D.&nbsp;candidate at the School of Electrical and Computer Engineering at Georgia Institute of Technology.</h4>
+				<br>
+				<h4>My current research spans the areas of machine learning, distributed optimization and inference, applications of deep neural networks especially in coding and communication, and learning and inverse problems with side information, esp. in biology and micro-RNA sensing.</h4>
 				
 			</div>
 		</div>
 	</div>
-	<hr style="height:10px; visibility:show;" />
+
+	<hr style="height:0px; visibility:show;" />
 	<div class="container" align="justify">
-		<h3>Bio:::</h3>
-		<h4>For more information, please check out my <a href="https://afshinabdi.github.io/vitae/cv.pdf">Resume</a> and recent <a href="{{ site.baseurl }}projects.html"> projects</a>.</h4>
-		<h4>My research focus is eseentially on Optimization and Information Theory in the areas of Machine Learnig, Data Science, and Signal Processing in Biology. on the distributed training and optimization in Deep Learning, and model restructuring and compression. </h4>
-		<h4>I have research and work experience in the areas of <br>
-		Machine Learning, Distributed Training, Optimization, <br>
-		Data Science, Signal Processing, and Computer Vision.</h4>
+		<div class="row">
+			<div class="col-sm-3" align="center">
+			<img class="img-circle" style="padding:10%;width:160px;" src="{{ site.baseurl }}static/img/education.png">
+			</div>
+			<div class="col-sm-9" align="justify">
+				<h4><b>Education</b></h4> <br>
+				<ul>
+					<li> Ph.D., Electrical &amp; Computer Engineering, Georgia Institute of Technology <text class="text-muted">(expected June. 2020)</text></li>
+					<li> M.Sc. Electrical Engineering, Sharif University of Technology </li>			
+					<li> B.Sc. Electrical Engineering, Sharif University of Technology </li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	
-	<hr style="height:10px; visibility:show;" />
+	<hr style="height:0px; visibility:show;" />
 	<div class="container" align="justify">
-		<h3>Bio:::</h3>
-		<h4>For more information, please check out my <a href="https://afshinabdi.github.io/vitae/cv.pdf">Resume</a> and recent <a href="{{ site.baseurl }}projects.html"> projects</a>.</h4>
-		<h4>My research focus is eseentially on Optimization and Information Theory in the areas of Machine Learnig, Data Science, and Signal Processing in Biology. on the distributed training and optimization in Deep Learning, and model restructuring and compression. </h4>
-		<h4>I have research and work experience in the areas of <br>
-		Machine Learning, Distributed Training, Optimization, <br>
-		Data Science, Signal Processing, and Computer Vision.</h4>
+		<div class="row">
+			<div class="col-sm-3" align="center">
+			<img class="img-circle" style="padding:10%;width:160px;" src="{{ site.baseurl }}static/img/research.png">
+			</div>
+			<div class="col-sm-9" align="justify">
+			<h4><b>Research Interests</b></h4> <br>
+			<p> My general research interests are optimization theory and data processing, with applications in machine learning and biology, such as:
+			<ul>
+				<li> Distributed Deep Learning and Inference </li>			
+				<li> Machine Learning with Side Information </li>
+				<li> Learning and Inference in Graphical Models </li>
+				<li> Signal Processing and Compressed Sensing in Biology </li>
+			</ul>
+			</p>
+			</div>
+		</div>
 	</div>
 
+	<hr style="height:0px; visibility:show;" />
+	<!--
+	<div class="container" align="center">
+		<p>For more information, please check out my <a href="https://afshinabdi.github.io/vitae/cv.pdf">Resume</a> and recent <a href="{{ site.baseurl }}projects.html"> projects</a>.</p>
+	</div>
+	-->
 	<div class="container" align="center">
 	  {% include social.html %}
 	</div>

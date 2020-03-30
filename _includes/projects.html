@@ -1,35 +1,128 @@
 <section id="projects">
 <div class="container">
-  <h3>Projects</h3>
+  <h3><strong>Projects</strong></h3>
+  <hr style="height:2px; visibility:show; background:gray; margin-top:0px" />
   <div class="panel panel-default">
     <div class="panel-body">
-		Coming soon!
-	<hr style="height:5px; visibility:show;" />
+	<div>
+		<h3>Distributed Deep Learning</h3>
+		<p>
+			One of the main challenges in distributed training is the communication cost due to the transmission of the parameters or stochastic gradients (SGs) of the deep model for synchronization across processing nodes/workers. To reduce the communication bottleneck in distributed training, I have approached the problem from three different perspectives: <em>compressive sampling, matrix decomposition, and Information theory and the Central Estimation Officer (CEO) problem</em>.
+		</p>
+
+		<h5>
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<a href="#">Quantized Compressive Sampling</a>
+		</h5>
 		<div class="row">
-			<div class="col-sm-9" align="center">
-			<h5>
-				<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 1</a></strong>
-				- Ei viderer tacimates pro, quem assum ea nam. Veritus omnesque eam te. Et natum mucius tamquam vel,
-				ea dolorem volumus deterruisset nec. Graeci mentitum sea an, eu prima elaboraret est.
-			</h5>
+			<div class="col-sm-8" align="justify">
+			<p>
+				The goal is achieving an arbitrarily large unbiased compression of SG while ensuring the mean squared
+				error (MSE) is low. Inspired by the design of structured mixing matrices in compressed sensing, 
+				I developed Quantized Compressive Sampling (QCS) and showed that it can achieve orders of magnitude 
+				smaller MSE compared to the state-ofthe-art unbiased compression techniques, resulting in superior
+				convergence rate.
+			</p>
 			</div>
-			<div class="col-sm-3" align="justify">
-				<img class="img-square avatar" width=169 height=187 alt="Afshin Abdi" align="top" src="{{ site.baseurl }}static/img/{{ site.avatar }}">
+			<div class="col-sm-4" align="center">
+				<img width=240 src="{{ site.baseurl }}static/img/projects/quantizedCS.png">
 			</div>
 		</div>
 
-	<hr style="height:5px; visibility:show;" />
 		<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 2</a></strong>
-			- An eripuit phaedrum qui, nec facer splendide ex, vel ea assum facilisi convenire.
-			Te his neglegentur consectetuer.
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<a href="#">Indirect Stochastic Gradient Compression</a>
 		</h5>
-	<hr style="height:5px; visibility:show;" />
-    	<h5>
-			<i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 3</a></strong>
-			- An alii quot tantas eum, doming platonem persecuti mea et, vim perpetua cotidieque delicatissimi in.
+		<div class="row">
+			<div class="col-sm-8" align="justify">
+			<p>
+				One way of compressing the stochastic gradients in distributed learning is via
+				low-rank matrix decomposition and then quantizing the factorized terms. However, 
+				naively pursuing such an approach is costly, both 
+				in terms of the computations and the resulting error during training. I used the 
+				factorization inherently provided during the backpropagation algorithm and developed 
+				unbiased quantization techniques for compression.
+			</p>
+			</div>
+			<div class="col-sm-4" align="center">
+				<img width=240 src="{{ site.baseurl }}static/img/projects/isgq.png">
+			</div>
+		</div>
+
+		<h5>
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<a href="#">Distributed Deep Learning via CEO</a>
 		</h5>
-	<hr style="height:10px; visibility:show;" />
+		<div class="row">
+			<div class="col-sm-8" align="justify">
+			<p>
+				Distributed learning can be framed as a CEO problem; the computations at each worker 
+				can be considered as a noisy observation of the true update (or gradient), and the 
+				objective of distributed learning would be reliable estimation of the true update with minimum
+				communication from workers.
+			</p>
+			</div>
+			<div class="col-sm-4" align="center">
+				<img width=240 src="{{ site.baseurl }}static/img/projects/ceo.png">
+			</div>
+		</div>
+	</div>
+
+	<hr style="height:2px; visibility:show;" />
+	<!--hr style="height:5px; visibility:show;" /-->
+<!-------------------------------------------------------------------------------------->
+	<div>
+		<h3>Federated Learning over Wireless Edge Networks</h3>
+		<p>
+			Placeholder
+		</p>
+
+		<h5>
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<a href="#">Analog Compression</a>
+		</h5>
+		<div class="row">
+			<div class="col-sm-8" align="justify">
+			<p>
+				Under Construction!!!
+			</p>
+			</div>
+			<div class="col-sm-4" align="center">
+				<img width=240 height=50 src="{{ site.baseurl }}static/img/projects/analog_fl_mac.png">
+			</div>
+		</div>
+
+	</div>
+
+	<hr style="height:1px; visibility:show; background:gray;" />
+<!-------------------------------------------------------------------------------------->
+	<div>
+		<h3>Model Compression</h3>
+		<p>
+			While the complexity of modern deep neural networks allows them to
+			learn complicated tasks, the large number of parameters makes them
+			prone to over-fitting, which adversely affects the accuracy and variance of
+			deep neural networks. Moreover, computational complexity and memory
+			footprint restrict the deployment of such deep models in many end-user
+			devices. Hence, model reduction is a highly desirable process for deep
+			neural networks.
+		</p>
+
+		<h5>
+			<i class="fa fa-github"></i>&nbsp;&nbsp;<a href="https://dnntoolbox.github.io/Net-Trim/">Net-Trim: Convex Pruning of Neural Networks</a>
+		</h5>
+		<div class="row">
+			<div class="col-sm-8" align="justify">
+			<p>
+				Under Construction!!!
+			</p>
+			</div>
+			<div class="col-sm-4" align="center">
+				<img width=240 height=50 src="{{ site.baseurl }}static/img/projects/analog_fl_mac.png">
+			</div>
+		</div>
+
+	</div>
+
+	<hr style="height:1px; visibility:show; background:gray;" />
+<!-------------------------------------------------------------------------------------->
+	<!--/div>
 		<h5>
 			<i class="fa fa-globe"></i>&nbsp;&nbsp;<strong><a href="#">Project 4</a></strong>
 			- Vim an case vidit sententiae, est at euismod laboramus efficiantur. Ei sit brute lorem,
@@ -37,22 +130,11 @@
 		</h5>
 	<hr style="height:10px; visibility:show;" />
 		<h5>
-			<i class="fa fa-globe"></i>&nbsp;&nbsp;<strong><a href="#">Project 5</a></strong>
-			- Dicta causae meliore ex vel, in vix erant integre petentium. Vix ei nisl scripta recusabo,
-			eam doming blandit facilisis.
-		</h5>
-		<h5>
 			<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Project 6</a></strong>
 			- Inermis recusabo elaboraret mea et, dicat neglegentur vim te. Nec et sanctus scriptorem,
 			usu ex sapientem gubergren. Tamquam admodum ei usu.
 		</h5>
-		<h5>
-			<i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Project 7</a></strong>
-			- Essent putant indoctum sed in, reprimique persequeris neglegentur te quo. Nam rebum
-			tractatos partiendo at, debet ubique oporteat ut his.
-		</h5>
 
-    </div>
-  </div>
+    </div-->
 </div>
 </section>

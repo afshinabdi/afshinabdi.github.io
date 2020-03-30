@@ -5,8 +5,10 @@ body {
   height: 100%;
   background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
   /* The html and body elements cannot have any padding or margin. 27A822*/
-  border-top: 3px solid #5987E6;
+  /*border-top: 3px solid #5987E6;*/
+  margin-top:25px;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -19,6 +21,27 @@ body {
   /*padding: 0 0 60px;*/
 }
 
+/* button
+-------------------------------------------------- */
+.button {
+  /*background-color: #f5f5f5;*/
+  border: none;
+  border-radius: 8px;
+  color: 7DC3FF;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.button:hover {
+  background: #f0f0f0;
+  color: #5987E6;
+}
+
 /* Navbar
 -------------------------------------------------- */
 
@@ -28,12 +51,13 @@ body {
 .navbar-default {
   background-color: #ffffff;
   border-color: #ffffff;
-  position: -webkit-sticky;
+/*  position: -webkit-sticky;
   position: sticky;
   top: 0;
   margin-bottom: 10px;
+  overflow: hidden;*/
 }
-/*
+
 .navbar-default .navbar-brand {
   color: #6b6b6b;
 }
@@ -88,7 +112,8 @@ body {
     background-color: #ffffff;
   }
 }
-*/
+
+
 /* Custom page CSS
 -------------------------------------------------- */
 .container {
@@ -106,7 +131,11 @@ body {
   color: #2D4673;
 }
 .container h3, h4, h5 {
-	display: inline;
+	display: inline-block;
+}
+.container p {
+	line-height: 20px;
+	font-size: 18px;
 }
 
 .img-responsive {
@@ -127,6 +156,11 @@ body {
 .panel-default h6 {
   font-size: 15px;
 }
+.panel-default p {
+	text-align: justify;
+	line-height: 20px;
+	font-size: 18px;
+}
 .panel-default h4 a, h5 a {
   color: #5987E6;
 }
@@ -141,7 +175,8 @@ body {
   text-align: left;
 }
 .social {
-  padding-top: 12px;
+  text-align: center;
+  padding-top: 10px;
   word-spacing: 25px;
   padding-bottom: 8px;
 }
