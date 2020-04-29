@@ -12,7 +12,7 @@ safe: true
 
 # edit here to achieve your personal greatness
 url: https://afshinabdi.github.io/
-baseurl: https://afshinabdi.github.io/
+baseurl: / #https://afshinabdi.github.io/
 title: Afshin Abdi
 author: Afshin Abdi
 description: Personal webpage, projects, and resume

@@ -71,7 +71,15 @@
 	<div>
 		<h3>Federated Learning over Wireless Edge Networks</h3>
 		<p>
-			Placeholder
+			Transmitting stochastic gradients (SG)
+			or deep model’s parameters over a limited-bandwidth wireless
+			channel can incur large training latency and excessive power
+			consumption. Hence, data compressing is often used to reduce
+			the communication overhead. However, efficient communication
+			requires the compression algorithm to satisfy the constraints
+			imposed by the network, such as unreliable transmission
+			and idle nodes in the edge network, limited transmission power,
+			and the requirement to preserve data privacy.
 		</p>
 
 		<h5>
@@ -80,11 +88,18 @@
 		<div class="row">
 			<div class="col-sm-8" align="justify">
 			<p>
-				Under Construction!!!
+				Efficient communication for federated learning over multiple-access channels 
+				requires satisfying the constraints imposed by the communication medium and taking 
+				advantage of its characteristics, especially, (i) The MAC channel can naturally 
+				compute weighted average of the transmitted values, and 
+				(ii) edge-node’s private information should not leak to the edge router. 
+				These requirements enforce a Homomorphic property on the encoders. 
+				Analog compression uses random partial Hadamard matrices to provide a 
+				low-MSE unbiased SG compression, while satisfying the requirements of the FL over wireless MAC.
 			</p>
 			</div>
 			<div class="col-sm-4" align="center">
-				<img width=240 height=50 src="{{ site.baseurl }}static/img/projects/analog_fl_mac.png">
+				<img width=240 src="{{ site.baseurl }}static/img/projects/analog_fl_mac.png">
 			</div>
 		</div>
 
@@ -120,7 +135,7 @@
 			</p>
 			</div>
 			<div class="col-sm-4" align="center">
-				<img width=240 height=50 src="{{ site.baseurl }}static/img/projects/nettrim.png">
+				<img width=240 height=180 src="{{ site.baseurl }}static/img/projects/nettrim.png">
 			</div>
 		</div>
 
